@@ -32,11 +32,11 @@ valign = 1
 [node name="MenuButtons" type="Node2D" parent="UI"]
 position = Vector2( 0, 400 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/MenuButtons"]
+[node name="StartMenu" type="VBoxContainer" parent="UI/MenuButtons"]
 margin_right = 576.0
 margin_bottom = 40.0
 
-[node name="Start" type="Button" parent="UI/MenuButtons/VBoxContainer"]
+[node name="Start" type="Button" parent="UI/MenuButtons/StartMenu"]
 margin_right = 576.0
 margin_bottom = 67.0
 focus_mode = 0
@@ -46,7 +46,7 @@ enabled_focus_mode = 0
 text = "Start"
 flat = true
 
-[node name="Setiings" type="Button" parent="UI/MenuButtons/VBoxContainer"]
+[node name="Setiings" type="Button" parent="UI/MenuButtons/StartMenu"]
 margin_top = 71.0
 margin_right = 576.0
 margin_bottom = 138.0
@@ -57,7 +57,7 @@ enabled_focus_mode = 0
 text = "Settings"
 flat = true
 
-[node name="Quit" type="Button" parent="UI/MenuButtons/VBoxContainer"]
+[node name="Quit" type="Button" parent="UI/MenuButtons/StartMenu"]
 margin_top = 142.0
 margin_right = 576.0
 margin_bottom = 209.0
@@ -66,6 +66,43 @@ custom_colors/font_color = Color( 0.447059, 0.447059, 0.447059, 1 )
 custom_fonts/font = ExtResource( 2 )
 enabled_focus_mode = 0
 text = "Quit"
+flat = true
+
+[node name="DifficultyMenu" type="VBoxContainer" parent="UI/MenuButtons"]
+margin_left = 576.0
+margin_right = 1152.0
+margin_bottom = 209.0
+
+[node name="Easy" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
+margin_right = 576.0
+margin_bottom = 67.0
+focus_mode = 0
+custom_colors/font_color = Color( 0.447059, 0.447059, 0.447059, 1 )
+custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Easy"
+flat = true
+
+[node name="Medium" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
+margin_top = 71.0
+margin_right = 576.0
+margin_bottom = 138.0
+focus_mode = 0
+custom_colors/font_color = Color( 0.447059, 0.447059, 0.447059, 1 )
+custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Medium"
+flat = true
+
+[node name="Hard" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
+margin_top = 142.0
+margin_right = 576.0
+margin_bottom = 209.0
+focus_mode = 0
+custom_colors/font_color = Color( 0.447059, 0.447059, 0.447059, 1 )
+custom_fonts/font = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Hard"
 flat = true
 
 [node name="Score" type="Node2D" parent="."]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Fonts/Gugi-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/StartMenu.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/gugi-67.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Scripts/MenuButtons.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/DifficultyMenu.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -78,6 +79,7 @@ flat = true
 margin_left = 576.0
 margin_right = 1152.0
 margin_bottom = 209.0
+script = ExtResource( 5 )
 
 [node name="Easy" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
 margin_right = 576.0
@@ -110,6 +112,8 @@ custom_fonts/font = ExtResource( 3 )
 enabled_focus_mode = 0
 text = "Hard"
 flat = true
+
+[node name="Tween" type="Tween" parent="UI/MenuButtons/DifficultyMenu"]
 
 [node name="Score" type="Node2D" parent="."]
 

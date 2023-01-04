@@ -5,4 +5,6 @@ func _ready():
 	
 
 func _on_Start_pressed():
+	print(Global.test_var)
 	get_node("StartMenu").move(Vector2(-576,0))
+	get_node("DifficultyMenu").move(Vector2(0,0))

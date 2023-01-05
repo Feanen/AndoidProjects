@@ -78,7 +78,7 @@ flat = true
 [node name="DifficultyMenu" type="VBoxContainer" parent="UI/MenuButtons"]
 margin_left = 576.0
 margin_right = 1152.0
-margin_bottom = 209.0
+margin_bottom = 400.0
 script = ExtResource( 5 )
 
 [node name="Easy" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
@@ -113,6 +113,17 @@ enabled_focus_mode = 0
 text = "Hard"
 flat = true
 
+[node name="Back" type="Button" parent="UI/MenuButtons/DifficultyMenu"]
+margin_top = 300.0
+margin_right = 576.0
+margin_bottom = 500.0
+focus_mode = 0
+custom_colors/font_color = Color( 0.447059, 0.447059, 0.447059, 1 )
+custom_fonts/font = ExtResource( 3 )
+enabled_focus_mode = 0
+text = "Back"
+flat = true
+
 [node name="Tween" type="Tween" parent="UI/MenuButtons/DifficultyMenu"]
 
 [node name="Score" type="Node2D" parent="."]
@@ -124,3 +135,4 @@ flat = true
 [node name="Globals" type="Node2D" parent="."]
 
 [connection signal="pressed" from="UI/MenuButtons/StartMenu/Start" to="UI/MenuButtons" method="_on_Start_pressed"]
+[connection signal="pressed" from="UI/MenuButtons/DifficultyMenu/Back" to="UI/MenuButtons" method="_on_Back_pressed"]
